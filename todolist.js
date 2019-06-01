@@ -2,6 +2,7 @@ $("input[type='text']").keypress(function(event){
     //when user is pressed enter key
     if(event.which === 13){
         $("ul").append("<li><span><i class='fas fa-trash-alt'></i></span>"+ $(this).val() +"</li>");
+        $(this).val("");
     }
 })
 
